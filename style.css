@@ -1,8 +1,8 @@
 :root {
-    --cor-principal: #8B5E3C; /* Chocolate ao leite */
-    --cor-secundaria: #E7C8A0; /* Caramelo suave */
-    --cor-terciaria: #FFF3E0; /* Creme de baunilha */
-    --cor-destaque: #D2691E; /* Doce de leite */
+    --cor-principal: #ff8abf; /* Chocolate ao leite */
+    --cor-secundaria: #ffe6f0; /* Caramelo suave */
+    --cor-terciaria: #ffddee; /* Creme de baunilha */
+    --cor-destaque: #b4005f; /* Doce de leite */
     --cor-acento: #B22222; /* Açúcar mascavo queimado (botões, destaques fortes) */
     --cor-texto-claro: #FFFFFF;
     --cor-texto-escuro: #3E3E3E; /* Marrom escuro para leitura */
