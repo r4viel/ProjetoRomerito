@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Delícias de Cookie - Página Inicial</title>
+    <title>The Liceria Drink Bottini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="header">
-        <img src="logo.png" alt="logo" width="100px" class="logo">
-        <h1>Café Botinni</h1>
-        <div class="icon-group">
+        <img src="imagem/logo_rosa.avif" alt="logo" width="100px" class="logo">
+        <h1>The Liceria Drink</h1>
+        <div class="icon-gropo">
             <div class="icon" onclick="openFavoritesModal()">
-                <img src="favorito.png" alt="Ícone de Favoritos">
+                <img src="imagem/estrela.avif" alt="Ícone de Favoritos">
             </div>
             <div class="icon" onclick="openCartModal()">
-                <img src="carrinho de compras.png" alt="Ícone de Carrinho">
+                <img src="imagem/carrinho.jpg" alt="Ícone de Carrinho">
             </div>
         </div>
     </div>
@@ -29,7 +32,7 @@
     <div class="section" id="about-us">
         <h2 class="section-title">Sabores que Conquistam</h2>
         <div class="about-us-content">
-            <p>Bem-vindo à <strong>Café Botinni</strong>!
+            <p>Bem-vindo ao Café Bottini!
              Descubra cafeses e doces artesanais feitos com ingredientes selecionados e muito amor. Cada mordida é uma experiência única e irresistível.</p>
             <a href="#produtos-section" class="products-button">Ver Produtos</a>
         </div>
@@ -37,23 +40,20 @@
     <div id="fav-section">
         <h2 class="section-title">Nossos Favoritos</h2>
         <p>Cada café é preparado com ingredientes premium e muito carinho. Escolha Seus favoritos e experimente o sabor da felicidade</p>
-        <div class="main-content">
-            <img src="cookie-inicio.png" alt="mostruario">
-            </div>
     </div>
 
     <div id="produtos-section">
         <h2 class="section-title">Nossos Produtos</h2>
-        <div class="main-content" id="produtos">
+        <div class="main-content clearfix" id="produtos">
             </div>
     </div>
     
     <div class="section" id="feedbacks-section">
         <h2 class="section-title">O que dizem nossos clientes</h2>
-        <div class="feedback-grid">
+        <div class="feedback">
             <div class="feedback-card">
                 <p>"Serviço excelente e sabores que superaram minhas expectativas. Com certeza vou pedir de novo!"</p>
-                <strong>- Diego Axel</strong>
+                <strong>Edson Caetano Bottini</strong>
             </div>
         </div>
     </div>
@@ -80,9 +80,9 @@
         </div>
     </div>
 
-    <div class="footer">
+    <footer>
         <p>&copy; 2025 Todos os direitos reservados.</p>
-        <!-- GITHUB -->
+        
         <a target="_blank" href="">
             <svg class="icon" role="img" aria-label="GitHub"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -95,30 +95,30 @@
            0 1.6-.01 2.88-.01 3.27 0 .32.22.7.82.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
             </svg>
         </a>
-    </div>
+    </footer>
 </body>
  <script>
         const products = [
-            { id: 1, name: "Espresso Botinni", price: 16.00, image: "" },
-            { id: 2, name: "Latte Cremoso", price: 20.00, image: "" },
-            { id: 3, name: "Cappuccino Clássico", price: 16.00, image: "" },
-            { id: 4, name: "Botinni Caramel Latte", price: 17.00, image: "" },
-            { id: 5, name: "Mocha Noir", price: 18.00, image: ""},
-            { id: 6, name: "Affogato Botinni", price: 20.00, image: ""},
-            { id: 7, name: "Cold Brew Botinni", price: 15.00, image: ""},
-            { id: 8, name: "Iced Vanilla Latte", price: 17.00, image: ""},
-            { id: 9, name: "Café Botico", price: 18.00, image: ""},
-            { id: 10, name: "Chai Latte botinni", price: 20.00, image: ""},
-            { id: 11, name: "Matcha Cream", price: 20.00, image: ""},
-            { id: 12, name: "Chocolate Quente", price: 17.00, image: ""},
-            { id: 13, name: "Limonada de Lavanda", price: 12.00, image: ""},
-            { id: 14, name: "Soda Italiana de Frutas Vermelhas", price: 18.00, image: ""},
-            { id: 15, name: "Bolo Botinni de Baunilha", price: 12.00, image: ""},
-            { id: 16, name: "Brownie Botinni", price: 9.00, image: ""},
-            { id: 17, name: "Cookie Triplo Chocolate", price: 13.00, image: ""},
-            { id: 18, name: "Cheesecake de Frutas Vermelhas", price: 18.00, image: ""},
-            { id: 19, name: "Sanduiche Caprese Botinni", price: 18.00, image: ""},
-            { id: 20, name: "tostex Botinni de Frango", price: 15.00, image: ""}
+            { id: 1, name: "Espresso Bottini", price: 16.00, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7PgDLmIpY3QjrNB6hLRcGhgkRQC3JWQ53w&s" },
+            { id: 2, name: "Latte Cremoso", price: 20.00, image: "https://i.metroimg.com/eRge5B-Q5oHb5UJtV0nExf85_uFRFrx4gUj6QBOIgb0/w:1200/q:85/f:webp/plain/2018/06/11222125/Rose-latte-.jpg" },
+            { id: 3, name: "Cappuccino Clássico", price: 16.00, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVar6fi2TRg3T2K10LxtW-lEKjFn2DFtC9TA&s" },
+            { id: 4, name: "Bottini Caramel Latte", price: 17.00, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5fDoH2JhFlfRw7jkTJcIsh-5ySEVUtahJ_A&s" },
+            { id: 5, name: "Mocha Noir", price: 18.00, image: "https://s2-vogue.glbimg.com/ph-mhd05AFnc1AyqHv5tsC4-sdE=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_5dfbcf92c1a84b20a5da5024d398ff2f/internal_photos/bs/2023/R/j/RE8F6nTqAmyHi9SANv1Q/pipocoffee-pikurruchas.jpeg"},
+            { id: 6, name: "Affogato Bottini", price: 20.00, image: "https://www.vee.com.br/storage/images/cache/image-1706411153-800x800-958ec64b.webp"},
+            { id: 7, name: "Cold Brew Bottini", price: 15.00, image: "https://selecoes.ig.com.br/media/_versions/2025/02/gelo-diferente_widemd.png"},
+            { id: 8, name: "Iced Vanilla Latte", price: 17.00, image: "https://img.freepik.com/fotos-premium/sorvete-de-copo-sobremesa-milkshake-de-comida_53876-212686.jpg?semt=ais_hybrid&w=740&q=80"},
+            { id: 9, name: "Café Botico", price: 18.00, image: "https://thumbs.dreamstime.com/b/x%C3%ADcara-rosa-de-caf%C3%A9-preto-e-flores-cor-pastel-foto-vertical-179080941.jpg"},
+            { id: 10, name: "Chai Latte Bottini", price: 20.00, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxwCum6ROKtWjUC3LSbuM8loi72BekECXu5Q&s"},
+            { id: 11, name: "Matcha Cream", price: 20.00, image: "https://www.shutterstock.com/image-photo/iced-matcha-strawberry-latte-tall-260nw-2623077087.jpg"},
+            { id: 12, name: "Chocolate Quente", price: 17.00, image: "https://m.media-amazon.com/images/I/51DqoAMVlIL.jpg"},
+            { id: 13, name: "Limonada de Lavanda", price: 12.00, image: "https://thumbs.dreamstime.com/b/refrescando-bebidas-de-limonada-lavanda-num-tabuleiro-cor-rosa-sob-luz-solar-brilhante-cen%C3%A1rio-relaxamento-convidativo-uma-cena-391011338.jpg"},
+            { id: 14, name: "Soda Italiana de Frutas Vermelhas", price: 18.00, image: "https://www.receitasdechef.com.br/views/assets/img/postagens/2022/09/soda-italiana-com-morangos.html.jpeg"},
+            { id: 15, name: "Bolo Bottini de Baunilha", price: 12.00, image: "https://img.cdndsgni.com/preview/11682215.jpg"},
+            { id: 16, name: "Brownie Bottini", price: 9.00, image: "https://recipesblob.oetker.com.br/assets/e10115f750304838b7a12fe74c835f31/750x910/brownie-de-coraojpg.jpg"},
+            { id: 17, name: "Cookie Triplo Chocolate", price: 13.00, image: "https://www.soulfullymade.com/wp-content/uploads/2019/02/strawberry-cheesecake-oreo-cookies-sq-1-2.jpg"},
+            { id: 18, name: "Cheesecake de Frutas Vermelhas", price: 18.00, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgZbCaPoCyJJCj1Igzp0_ulrC8xPQyLhp1uw&s"},
+            { id: 19, name: "Sanduiche Caprese Bottini", price: 18.00, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvWiBrpOknfvRtwsEohTMvg2CW8WCVxstWww&s"},
+            { id: 20, name: "Tostex Bottini de Frango", price: 15.00, image: "https://benditosalgado.com.br/wp-content/uploads/2020/04/Pao-Metro-Frango.jpg"}
         ];
 
         const cartModal = document.getElementById('cart-modal');
@@ -143,7 +143,7 @@
                 const favoriteClass = isFavorited ? 'favorited' : '';
                 
                 productCard.innerHTML = `
-                    <img class="favorite-icon ${favoriteClass}" src="favorito.png" alt="Favoritar" onclick="toggleFavorite(${product.id})">
+                    <img class="favorite-icon ${favoriteClass}" src="imagem/estrela.avif" alt="Favoritar" onclick="toggleFavorite(${product.id})">
                     <img class="product-image" src="${product.image}" alt="${product.name}">
                     <h3>${product.name}</h3>
                     <p>R$ ${product.price.toFixed(2)}</p>
@@ -184,7 +184,6 @@
             } else {
                 cart.push({ ...product, quantity: 1 });
             }
-            alert(`${product.name} adicionado ao carrinho!`);
             renderCart();
         }
 
@@ -259,37 +258,11 @@
             }
         }
 
-        function sendOrderToWhatsApp() {
-            if (cart.length === 0) {
-                alert("Seu carrinho está vazio. Adicione produtos antes de finalizar a compra.");
-                return;
-            }
+        
 
-            let message = "Olá, gostaria de fazer um pedido!\n\n";
-            let total = 0;
 
-            cart.forEach(item => {
-                const itemTotal = item.price * item.quantity;
-                total += itemTotal;
-                message += `*Produto:* ${item.name}\n`;
-                message += `*Quantidade:* ${item.quantity}\n`;
-                message += `*Valor total:* R$ ${itemTotal.toFixed(2)}\n\n`;
-            });
-
-            message += `*Valor total do pedido:* R$ ${total.toFixed(2)}`;
-
-            const phoneNumber = "5584994632332";
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-            window.open(whatsappUrl, '_blank');
-        }
+        
 
         document.addEventListener('DOMContentLoaded', renderProducts);
     </script>
 </html>
-
-
-
-
-
-
