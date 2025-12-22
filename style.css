@@ -1,11 +1,11 @@
 :root {
     --cor-principal: #e7126b; 
-    --cor-secundaria: #e7a0de;
-    --cor-terciaria: #FFF3E0;
+    --cor-secundaria: #ffaaf4;
+    --cor-terciaria: #ffcbdb;
     --cor-destaque: #fa3788; 
-    --cor-acento: #b22276; 
-    --cor-texto-claro: #f3dede;
-    --cor-texto-escuro: #fcf6fb2727; 
+    --cor-acento: #ff77c6; 
+    --cor-texto-claro: #f8d1eb;
+    --cor-texto-escuro: #272727; 
 }
 
         *{
@@ -56,6 +56,7 @@
             display: inline-block;
             margin-left: 15px;
             vertical-align: middle;
+            padding: 10px;
         }
 
         .header .icon-gropo .icon img {
@@ -89,14 +90,15 @@
         }
         
         #about-us {
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1577968508935-86f2b5757d70?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('imagem/');
             background-size: cover;
             background-position: center;
             color: var(--cor-texto-claro);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            padding: 60px 20px;
+            text-align: center;
+            text-shadow: 3px 2px 4px rgb(255, 0, 149);
             box-shadow: none;
             border-radius: 0;
-            padding: 60px 20px;
         }
 
         .section-title {
@@ -115,9 +117,9 @@
             font-size: large;
             text-align: center;
         }
-        /* ver onde esta esse fundo*/
+
         #about-us{
-            background-image: url(fundo.webp);
+            background-image: url(imagem/fundo_rosa.png);
         }
         #about-us .section-title {
             color: var(--cor-texto-claro);
@@ -128,12 +130,10 @@
             padding: 0 20px;
         }
         
-        .about-us-content p {
-            max-width: 800px;
-            margin: auto;
+        .about-us-content > p {
             line-height: 1.6;
-            font-size: 1.1em;
-            margin-bottom: 20px;
+            font-size: 1.2em;
+            margin-bottom: 25px;
         }
 
         .about-us-content .products-button {
@@ -167,6 +167,7 @@
             margin: 10px;
             padding: 15px;
             min-width: 280px;
+            min-height: 450px;
         }
 
         .product-card:hover {
@@ -175,12 +176,12 @@
 
         .product-card .favorite-icon {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 3px;
+            right: 5px;
             cursor: pointer;
-            width: 25px;
-            height: 25px;
-            filter: grayscale(100%);
+            width: 35px;
+            height: 35px;
+            filter: grayscale(70%);
             transition: filter 0.3s;
         }
 
@@ -195,8 +196,9 @@
             border-radius: 8px;
         }
 
-        .product-card h3 + p{
+        .product-card h3 + p {
             color: var(--cor-principal);
+            font-weight: bold;
             margin: 10px 0;
         }
 
@@ -223,36 +225,43 @@
 
         .feedback {
             text-align: center;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-            overflow: hidden;
+            width: 100%;
         }
 
         .feedback-card {
             background-color: var(--cor-secundaria);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
-            float: left;
-            width: calc(50% - 20px);
-            margin: 10px;
-            min-width: 280px;
+            padding: 45px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: block;
+            margin: 0 auto;
+            width: 85%;
+            max-width: 650px;
+            float: none;
+        }
+        #feedbacks-section{
+            clear: both;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            width: 100%;
         }
 
         .feedback-card p {
             font-style: italic;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             color: var(--cor-texto-escuro);
             border: 1px solid var(--cor-acento);
-            padding: 10px;
+            padding: 20px;
+            font-size: 1.1em;
+            line-height: 1.7;
         }
         
         .feedback-card strong {
             display: block;
-            color: var(--cor-destaque);
+            color: var(--cor-principal);
+            font-size: 1.2em;
         }
-
+        
         .modal-overlay {
             display: none;
             position: fixed;
@@ -388,6 +397,11 @@
         .clearfix{
             content: "";
             display: block;
+            clear: both;
+        }
+        .clearfix::after{
+            content: "";
+            display: table;
             clear: both;
         }
         footer {
